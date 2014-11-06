@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ZOO</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<strong>Witaj świecie!!</strong> <%= link_to "GO TO ANIMALS", animals_path %> <a href="/">Strona główna</a>
+<br>
+<%= yield %>
+
+</body>
+</html>
