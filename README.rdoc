@@ -1,17 +1,17 @@
 == README
 
--- Done
-	- Set up rails
-	- Make main page
-	- add animal model and controler
+*- Done
+	* Set up rails
+	* Make main page
+	* add animal model and controler
 
 
 
 
--- TO DO
-	- Add CSS to main page
-	- Make some layout
-	- Add paypal
-	- add user (model and controler) or facebook Oauth
-	
+*- TO DO
+	* Add CSS to main page
+	* Make some layout
+	* Add paypal
+	* add user (model and controler) or facebook Oauth
+
 <tt>rake doc:app</tt>.
