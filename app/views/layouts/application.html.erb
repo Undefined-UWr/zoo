@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= image_tag "banner.jpg" %>
-<%= link_to "GO TO ANIMALS", animals_path %> <a href="/">Strona g³ówna</a>
+<div class="banner">
+	<img src="baner.jpg" alt="Ukradli nam baner">
+</div>
+<br>
+<div class="menu">
+<a class="menu-btn" href="/animals">Nasze zwierzÄ™ta</a> <a class="menu-btn" href="/">Strona gÅ‚Ã³wna</a>
+</div>
 <br>
 <%= yield %>
 
