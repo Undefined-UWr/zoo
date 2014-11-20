@@ -1,21 +1,42 @@
-// Place all the styles related to the static_page controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-
 h1 {
 	text-align: center;
 	color: green;
 	font-family: Arial;
 }
-
+.belka{
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
 
 div.banner {
 	text-align: center;
+    margin-bottom: 10px;
 }
+.menu{
+  text-align: center;
+  background: red;
+  border-radius: 10px;
+  width: 990px;
+  height: 35px;
+  display:table-cell;
+  vertical-align:middle;
+}
+.menu-button
+{
+    margin: 10px;
+    padding: 3px 10px;
+    color: #000000;
+	background: #FFFF00;
+    border-radius: 10px;
+    border: 3px solid #FFFF00;
 
-.menu-btn {
-	color: white;
-	background: black;
+}
+.menu-button:hover
+{
+  padding: 3px 10px;
+  color: #000000;
+  background: #FFFF00;
+  border-radius: 10px;
+  border: 3px solid #fff105;
 }
