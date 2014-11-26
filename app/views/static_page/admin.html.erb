@@ -1,0 +1,13 @@
+Witaj Boże
+<br>
+Liczba użytkowników wynosi : <%= @users.count %>
+<br>
+<% @users.each do |user| %>
+	<%=user.name %>
+	<br>
+	<%=user.uid %>
+	<br>
+
+
+
+<%end%>

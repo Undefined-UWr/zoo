@@ -10,16 +10,25 @@
 <div class="banner">
     <img src="baner.jpg" alt="Ukradli nam baner">
 </div>
+<div id="user-widget">
+  <% if current_user %>
+    Witaj <strong><%= current_user.name %></strong>!    
+  <% end %>
+</div>
 <div class="belka">
     <div class="menu">
       <a class="menu-button" href="/animals">Nasze zwierzęta</a>
       <a class="menu-button" href="/">Strona główna</a>
-      <a class="menu-button" href="/animals">Nasze zwierzęta</a>
-      <a class="menu-button" href="/">Strona główna</a>
-      <a class="menu-button" href="/animals">Nasze zwierzęta</a>
-      <a class="menu-button" href="/">Strona główna</a>
+      <% if current_user %>
+      <%= link_to "Wyloguj", signout_path, id: "sign_out", class: "menu-button" %>
+      <%= link_to "Strona użytkownika",static_page_user_path, class: "menu-button" %> 
+      <%= link_to "Administracja",static_page_admin_path,class: "menu-button" %>   
+      <% else %>
+      <%= link_to "Zaloguj przez FB", "/auth/facebook", id: "sign_in", class: "menu-button" %>
+      <%end%>
     </div>
 </div>
+
 
 
 <%= yield %>
