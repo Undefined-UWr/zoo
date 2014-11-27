@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="banner">
-    <img src="baner.jpg" alt="Ukradli nam baner">
+    <%= image_tag("baner.jpg", class: "menu_icon") %>
 </div>
 <div id="user-widget">
   <% if current_user %>
@@ -22,7 +22,9 @@
       <% if current_user %>
       <%= link_to "Wyloguj", signout_path, id: "sign_out", class: "menu-button" %>
       <%= link_to "Strona użytkownika",static_page_user_path, class: "menu-button" %> 
-      <%= link_to "Administracja",static_page_admin_path,class: "menu-button" %>   
+      <% if admin? %>
+        <%= link_to "Administracja",static_page_admin_path,class: "menu-button" %> 
+      <% end %>  
       <% else %>
       <%= link_to "Zaloguj przez FB", "/auth/facebook", id: "sign_in", class: "menu-button" %>
       <%end%>

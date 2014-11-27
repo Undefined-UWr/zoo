@@ -1,5 +1,5 @@
 class StaticPageController < ApplicationController
-	before_filter :admin, :except => [ :user, :home ]
+	before_filter :admin_fillter, :except => [ :user, :home ]
 	def home
 	end
 
