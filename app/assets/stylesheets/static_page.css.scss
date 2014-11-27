@@ -1,42 +1,50 @@
 h1 {
-	text-align: center;
-	color: green;
-	font-family: Arial;
+  text-align: center;
+  color: green;
+  font-family: Arial;
 }
 .belka{
-  position: relative;
-  width: 990px;
-  margin: 0 auto;
-}
-
-div.banner {
-	text-align: center;
-    margin-bottom: 10px;
-}
-.menu{
+  width: 980px;
+  margin-left:190px;
   text-align: center;
-  background: red;
+  background: Dimgrey;
   border-radius: 10px;
-  width: 990px;
   height: 35px;
-  display:table-cell;
-  vertical-align:middle;
 }
-.menu-button
-{
-    margin: 10px;
-    padding: 3px 10px;
-    color: #000000;
-	background: #FFFF00;
-    border-radius: 10px;
-    border: 3px solid #FFFF00;
-
-}
-.menu-button:hover
-{
-  padding: 3px 10px;
+#button{
+  position: relative;
+  top: 8px;
   color: #000000;
-  background: #FFFF00;
+  background: Lightgrey;
+  text-decoration: none;
+  margin: 10px;
+  padding: 3px 10px;
   border-radius: 10px;
-  border: 3px solid #fff105;
+}
+.belka-button
+{
+  border: 3px solid #D3D3D3;
+}
+.belka-button:hover
+{
+  border: 5px solid #D3D3D3;
+}
+table.tabela
+{
+  width: 100%;
+}
+tr.banner{
+  height: 180px;
+}
+td.photo{
+  width: 87%;
+  text-align: right;
+  display: table-cell;
+}
+td.Wyloguj{
+  vertical-align: top;
+  width: 20%;
+}
+tr.TRbelka{
+  height: 50px;
 }
