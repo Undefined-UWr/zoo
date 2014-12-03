@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141126182022) do
+ActiveRecord::Schema.define(version: 20141126170932) do
 
   create_table "animals", force: true do |t|
     t.string   "name"
@@ -28,7 +28,15 @@ ActiveRecord::Schema.define(version: 20141126182022) do
     t.datetime "updated_at"
   end
 
-# Could not dump table "users" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "users", force: true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.boolean  "admin"
+    t.datetime "oauth_expires_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
