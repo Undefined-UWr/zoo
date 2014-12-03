@@ -15,6 +15,12 @@
   
   <img src=<%= @animal.photo %> alt="">
 </p>
-
 <%= link_to 'Edit', edit_animal_path(@animal) %> |
 <%= link_to 'Back', animals_path %>
+
+
+<%= form_for [@animal, @payment] do |f|  %>
+<%= hidden_field_tag(:animal_id, @animal) %>
+<%= hidden_field_tag(:user_id, session[:user_id]) %>
+<%= f.submit %>
+<% end %>

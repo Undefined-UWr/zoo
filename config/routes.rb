@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :animals
+  resources :animals do 
+  	resources :payments, shallow: true
+end
   root 'static_page#home'
   match 'auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
   match 'auth/failure', to: redirect('/'), via: [:get, :post]
