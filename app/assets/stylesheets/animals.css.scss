@@ -1,3 +1,80 @@
-// Place all the styles related to the animals controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div.TAB{
+  width: 980px;
+  margin-left: 192px;
+  height: 200px;
+}
+div.T{
+  margin: 1%;
+  width: 18%;
+  height: 87%;
+  float:left;
+  display: table-cell;
+}
+div.T:hover{
+  margin: 0% 0%;
+  width: 20%;
+  height: 100%;
+  float:left;
+}
+div.TR{
+  background-color: red;
+}
+div.TG{
+  background-color: green;
+}
+div.TB{
+  background-color: blue;
+}
+div.TY{
+  background-color: yellow;
+}
+div.TP{
+  background-color: #ff11af;
+}
+div.BT{
+  width: 100%;
+  height: 15%;
+}
+div.BL{
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: white;
+}
+div.BR{
+  text-align: right;
+  width: 50%;
+  height: 100%;
+  float: left;
+  color: white;
+}
+div.BPhoto{
+  width: 100%;
+  height: 60%;
+  float: inherit;
+}
+div.BB{
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+  vertical-align:middle;
+  width: 100%;
+  height: 25%;
+  float: inherit;
+}
+img.BPhoto{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
