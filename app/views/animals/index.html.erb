@@ -1,60 +1,27 @@
-<div><%=@animals.size%></div>
-<!--
-<table>
-  <thead>
-    <tr>
-      <th><div class="gg">Name</div></th>
-      <th>Description</th>
-      <th>Photoe</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @animals.each do |animal| %>
-      <tr>
-        <td><%= animal.name %></td>
-        <td><%= animal.description %></td>
-        <td><%= animal.photo %></td>
-        <td><%= link_to 'Show', animal %></td>
-        <% if admin? %>
-        <td><%= link_to 'Edit', edit_animal_path(animal) %></td>
-        <td><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %>
-        <%end%>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-<%= link_to 'New Animal', new_animal_path %>
--->
 <%ilosc=@animals.size%>
 <%i=0%>
 <% @animals.each do |animal| %>
     <%if i%5==0%>
         <div class="TAB">
     <%end%>
-    <%if i%5==0 && i!=ilosc%>
-        <%= link_to  animal do%>
-            <div class="TB T">
-              <div class="BT">
-                <% if admin? %>
-                    <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
-                    <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-                <%end%>
-              </div>
-              <div class="BPhoto"><img class="BPhoto" src=<%= animal.photo %> alt=""></div>
-              <div class="BB"><%= animal.name %></div>
-            </div>
+    <%= link_to  animal do%>
+        <%if i%5==0 && i!=ilosc%>
+                <div class="TB T">
             <%end%>
-    <%end%>
-    <%if i%5==1 && i!=ilosc%>
-        <%= link_to  animal do%>
-            <div class="TR T">
+        <%if i%5==1 && i!=ilosc%>
+                <div class="TR T">
+        <%end%>
+        <%if i%5==2 && i!=ilosc%>
+                <div class="TG T">
+        <%end%>
+        <%if i%5==3 && i!=ilosc%>
+                <div class="TY T">
+        <%end%>
+        <%if i%5==4 && i!=ilosc%>
+                <div class="TP T">
+        <%end%>
               <div class="BT">
-                <% if admin? %>
+                <% if true %>
                     <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
                     <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
                 <%end%>
@@ -62,63 +29,23 @@
               <div class="BPhoto"><img class="BPhoto" src=<%= animal.photo %> alt=""></div>
               <div class="BB"><%= animal.name %></div>
             </div>
-        <%end%>
-    <%end%>
-    <%if i%5==2 && i!=ilosc%>
-        <%= link_to  animal do%>
-            <div class="TG T">
-              <div class="BT">
-                <% if admin? %>
-                    <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
-                    <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-                <%end%>
-              </div>
-              <div class="BPhoto"><img class="BPhoto" src=<%= animal.photo %> alt=""></div>
-              <div class="BB"><%= animal.name %></div>
-            </div>
-        <%end%>
-    <%end%>
-    <%if i%5==3 && i!=ilosc%>
-        <%= link_to  animal do%>
-            <div class="TY T">
-              <div class="BT">
-                <% if admin? %>
-                    <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
-                    <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-                <%end%>
-              </div>
-              <div class="BPhoto"><img class="BPhoto" src=<%= animal.photo %> alt=""></div>
-              <div class="BB"><%= animal.name %></div>
-            </div>
-        <%end%>
-    <%end%>
-    <%if i%5==4 && i!=ilosc%>
-        <%= link_to  animal do%>
-            <div class="TP T">
-              <div class="BT">
-                <% if admin? %>
-                    <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
-                    <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
-                <%end%>
-              </div>
-              <div class="BPhoto"><img class="BPhoto" src=<%= animal.photo %> alt=""></div>
-              <div class="BB"><%= animal.name %></div>
-            </div>
-        <%end%>
     <%end%>
     <%if i%5==4%>
         </div>
     <%end%>
     <%i+=1%>
 <%end%>
+
 <%if i%5==0%>
     <div class="TAB">
     <%end%>
+
 <%= link_to  new_animal_path do%>
     <div class="TZ T">
       <div class="BPlus"><%= image_tag("29948.png", class:"BPhoto")%></div>
     </div>
 <%end%>
+
 <%if i%5==0%>
     </div>
 <%end%>

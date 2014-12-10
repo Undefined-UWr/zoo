@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea7ef76-d0b8-4b5e-8249-4d997ac5bf36" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/animals.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/animals.css.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/animals/index.html.erb" afterPath="$PROJECT_DIR$/app/views/animals/index.html.erb" />
     </list>
     <ignored path="zoo.iws" />
@@ -31,16 +30,9 @@
       <file leaf-file-name="index.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/animals/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57288134" vertical-offset="508" max-vertical-offset="1170">
-              <caret line="112" column="7" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
-              <folding>
-                <element signature="e#867#1476#0#ruby" expanded="false" />
-                <element signature="e#919#1464#0#ruby" expanded="false" />
-                <element signature="e#1485#2090#0#ruby" expanded="false" />
-                <element signature="e#2099#2704#0#ruby" expanded="false" />
-                <element signature="e#2713#3318#0#ruby" expanded="false" />
-                <element signature="e#3327#3932#0#ruby" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.48135594" vertical-offset="292" max-vertical-offset="1026">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -443,14 +435,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1188">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#867#1476#0#ruby" expanded="false" />
-            <element signature="e#919#1464#0#ruby" expanded="false" />
-            <element signature="e#1485#2090#0#ruby" expanded="false" />
-            <element signature="e#2099#2704#0#ruby" expanded="false" />
-            <element signature="e#2713#3318#0#ruby" expanded="false" />
-            <element signature="e#3327#3932#0#ruby" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -718,16 +703,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/animals/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57288134" vertical-offset="508" max-vertical-offset="1170">
-          <caret line="112" column="7" selection-start-line="112" selection-start-column="7" selection-end-line="112" selection-end-column="7" />
-          <folding>
-            <element signature="e#867#1476#0#ruby" expanded="false" />
-            <element signature="e#919#1464#0#ruby" expanded="false" />
-            <element signature="e#1485#2090#0#ruby" expanded="false" />
-            <element signature="e#2099#2704#0#ruby" expanded="false" />
-            <element signature="e#2713#3318#0#ruby" expanded="false" />
-            <element signature="e#3327#3932#0#ruby" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.48135594" vertical-offset="292" max-vertical-offset="1026">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
