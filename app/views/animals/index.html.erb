@@ -111,4 +111,14 @@
     <%end%>
     <%i+=1%>
 <%end%>
-
+<%if i%5==0%>
+    <div class="TAB">
+    <%end%>
+<%= link_to  new_animal_path do%>
+    <div class="TZ T">
+      <div class="BPlus"><%= image_tag("29948.png", class:"BPhoto")%></div>
+    </div>
+<%end%>
+<%if i%5==0%>
+    </div>
+<%end%>
