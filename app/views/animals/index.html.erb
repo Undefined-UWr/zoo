@@ -5,23 +5,29 @@
         <div class="TAB">
     <%end%>
     <%= link_to  animal do%>
-        <%if i%5==0 && i!=ilosc%>
+        <%if i%7==0 && i!=ilosc%>
                 <div class="TB T">
             <%end%>
-        <%if i%5==1 && i!=ilosc%>
-                <div class="TR T">
-        <%end%>
-        <%if i%5==2 && i!=ilosc%>
-                <div class="TG T">
-        <%end%>
-        <%if i%5==3 && i!=ilosc%>
-                <div class="TY T">
-        <%end%>
-        <%if i%5==4 && i!=ilosc%>
+        <%if i%7==1 && i!=ilosc%>
                 <div class="TP T">
         <%end%>
+        <%if i%7==2 && i!=ilosc%>
+                <div class="TG T">
+        <%end%>
+        <%if i%7==3 && i!=ilosc%>
+                <div class="TY T">
+        <%end%>
+        <%if i%7==4 && i!=ilosc%>
+                <div class="TF T">
+        <%end%>
+        <%if i%7==5 && i!=ilosc%>
+            <div class="TM T">
+        <%end%>
+        <%if i%7==6 && i!=ilosc%>
+            <div class="TR T">
+        <%end%>
               <div class="BT">
-                <% if true %>
+                <% if false %>
                     <div class="BL"><%= link_to 'Edit', edit_animal_path(animal) %></div>
                     <div class="BR"><%= link_to 'Destroy', animal, method: :delete, data: { confirm: 'Are you sure?' } %></div>
                 <%end%>
